@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora GypDecor's</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="top-bar">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">GypDecor's</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Acerca</a></li>
+      </ul>
+    </nav>
+
+    <!-- Avatar pequeño, redondo, esquina superior derecha -->
+    <div class="profile">
+      <img src="assets/img/foto.jpg" alt="Avatar Any Yandun" class="avatar" />
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero section -->
+    <section class="hero">
+      <h1>Calculadora de materiales — GypDecor's</h1>
+      <p>Calcula materiales aproximados según el área en metros cuadrados (m²).</p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="calculator card" aria-labelledby="calc-title">
+      <h2 id="calc-title">Calculadora</h2>
+
+      <label for="area" class="input-label">Área (m²)</label>
+      <input id="area" type="number" min="0" step="0.1" placeholder="Ej: 30" />
+
+      <button id="btn-calcular" class="btn">Calcular</button>
+
+      <div id="resultado" class="result-box" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 • GypDecor's • Any Yandun</small>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
